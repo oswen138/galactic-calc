@@ -1,17 +1,37 @@
 import {planetAge} from './../src/js/age.js';
 
-describe('inputAge', function() => {
-  let inputAge;
-
-  beforeEach(function(inputAge) {
-    let inputAge = [20, "Venus"];
-  });
+describe('inputAge', () => {
   
+  test("should calculate the inputted age in Mercury years", function() {
+    let mercuryAge = Math.floor((this.age)/.24);
+    expect(mercuryAge).toEqual(32);
+  });
+
   test("should calculate the inputted age in Venus years", function() {
     let venusAge = Math.floor((this.age)/.62);
     expect(venusAge).toEqual(32);
   });
 
+  test("should calculate the inputted age in Mars years", function() {
+    let venusAge = Math.floor((this.age)/1.88);
+    expect(venusAge).toEqual(32);
+  });
+
+  test("should calculate the inputted age in Jupiter years", function() {
+    let venusAge = Math.floor((this.age)/11.86);
+    expect(venusAge).toEqual(32);
+  });
+  test("should determine how many years a user has left to live on each planet", function() {
+    let venusAge = Math.floor((this.age)/11.86);
+    expect(venusAge).toEqual(32);
+  });
+  test("should return the number of years they have lived past the life expectancy", function() {
+    let venusAge = Math.floor((this.age)/11.86);
+    expect(venusAge).toEqual(32);
+  });
+
+
+});
 //   test('should calcuate the age inputted in mercury years, function() => {
 //     let mercuryAge = math.floor(this.age/.24);
 //     expect(mercuryAge).toEqual();
@@ -41,10 +61,3 @@ describe('inputAge', function() => {
 
 // });
 
-
-
-
-// this.mercury = math.floor(this.age/.24);
-// this.venus = math.floor(this.age/.62);
-// this.mars = math.floor(this.age/1.88);
-// this.jupiter = math.floor(this.age/11.86);
