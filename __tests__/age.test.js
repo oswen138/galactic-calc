@@ -2,6 +2,14 @@ import Triangle from './../src/js/triangle.js';
 
 describe('Triangle', () => {
 
+
+  this.mercury = math.floor(this.age/.24);
+  this.venus = math.floor(this.age/.62);
+  this.mars = math.floor(this.age/1.88);
+  this.jupiter = math.floor(this.age/11.86);
+
+
+
   test('should correctly create a triangle object with three lengths', () => {
     const triangle = new Triangle(2,4,5);
     expect(triangle.side1).toEqual(2);

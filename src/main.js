@@ -2,11 +2,11 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Triangle from './js/triangle.js';
-import Rectangle from './js/rectangle.js';
+import planetAge from './js/age.js';
+import lifeExpectancy from './js/expectancy.js';
 
 $(document).ready(function() {
-  $('#triangle-checker-form').submit(function(event) {
+  $('#age-form').submit(function(event) {
     event.preventDefault();
     const length1 = parseInt($('#length1').val());
     const length2 = parseInt($('#length2').val());
@@ -16,7 +16,7 @@ $(document).ready(function() {
     $('#response').append(`<p>${response}</p>`);
   });
 
-  $('#rectangle-area-form').submit(function(event) {
+  $('#expectancy-form').submit(function(event) {
     event.preventDefault();
     const length1 = parseInt($('#rect-length1').val());
     const length2 = parseInt($('#rect-length2').val());
