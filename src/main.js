@@ -8,20 +8,22 @@ import lifeExpectancy from './js/expectancy.js';
 $(document).ready(function() {
   $('#age-form').submit(function(event) {
     event.preventDefault();
-    const length1 = parseInt($('#length1').val());
-    const length2 = parseInt($('#length2').val());
-    const length3 = parseInt($('#length3').val());
-    const triangle = new Triangle(length1, length2, length3);
-    const response = triangle.checkType();
+    const name-planet = $('#name-planet').val();
+    const earth-age = parseInt($('#earth-age').val());
+    const planetAge = new planetAge(name-planet, earth-age);
+    const response = planetAge.checkType();
     $('#response').append(`<p>${response}</p>`);
   });
 
   $('#expectancy-form').submit(function(event) {
     event.preventDefault();
-    const length1 = parseInt($('#rect-length1').val());
-    const length2 = parseInt($('#rect-length2').val());
-    const rectangle = new Rectangle(length1, length2);
-    const response = rectangle.getArea();
-    $('#response2').append(`<p> The area of the rectangle is ${response}.</p>`);
+    const planet-stay = parseInt($('#planet-stay').val());
+    const diet1 = $('#diet1').val();
+    const diet2 = $('#diet2').val();
+    const lifeExpectancy = new lifeExpectancy(planet-stay, diet1, diet2);
+    const response = planet.getAge();
+    $('#response2').append(`<p> You have only this much time to live: ${response}.</p>`);
   });
 });
+
+
