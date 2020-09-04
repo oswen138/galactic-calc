@@ -1,5 +1,6 @@
 export default class planetAge {
 
+  //calculate age on planet
   constructor(age, planet) {
     this.age = age;
     this.planet = planet;
@@ -7,10 +8,36 @@ export default class planetAge {
     this.venus = math.floor(this.age/.62);
     this.mars = math.floor(this.age/1.88);
     this.jupiter = math.floor(this.age/11.86);
+
   }
 
-  //calculate age on planet
-  calcAge(planet, planetAge) {
+  checkType() {
+    if (this.age == this.planet == this.mercury) {
+      return this.age/.24;
+    } else if (this.age == this.planet == this.venus) {
+      return this.age/.62;
+    }  else if (this.age == this.planet == this.mars) {
+      return this.age/1.88;
+    }  else if (this.age == this.planet == this.jupiter) {
+      return this.age/11.86;
+    } else {
+      return "you have no age";
+    }
+  }    
+}
+
+
+
+
+
+
+
+
+
+
+  constructor(age, planet) {
+    this.age = age;
+    this.planet = planet;
   }
   mercuryAge() {
    this.age = this.age/.24;
@@ -29,9 +56,7 @@ export default class planetAge {
    return this.age;
   }
 }
-    if 
-  }
-    if (this.planet == this.mercury)
+    
 
 
 
