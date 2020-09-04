@@ -4,7 +4,7 @@ describe('inputAge', () => {
   
   test("should calculate the inputted age in Mercury years", function() {
     let mercuryAge = Math.floor((this.age)/.24);
-    expect(mercuryAge).toEqual(32);
+    expect(mercuryAge).toEqual(83);
   });
 
   test("should calculate the inputted age in Venus years", function() {
@@ -14,15 +14,15 @@ describe('inputAge', () => {
 
   test("should calculate the inputted age in Mars years", function() {
     let venusAge = Math.floor((this.age)/1.88);
-    expect(venusAge).toEqual(32);
+    expect(venusAge).toEqual(11);
   });
 
   test("should calculate the inputted age in Jupiter years", function() {
     let venusAge = Math.floor((this.age)/11.86);
-    expect(venusAge).toEqual(32);
+    expect(venusAge).toEqual(2);
   });
   test("should determine how many years a user has left to live on each planet", function() {
-    let venusAge = Math.floor((this.age)/11.86);
+    let yearsLeft = (mercuryAge/88 - planetStay(Math.floor((this.age)/);                     //Age convert to planet age, then divide by year, 88 days = 1 year
     expect(venusAge).toEqual(32);
   });
   test("should return the number of years they have lived past the life expectancy", function() {
