@@ -24,7 +24,7 @@ A website created with HTML, Javascript, and CSS where a user can submit informa
 
 ## Setup/Installation Requirements
 
-1. To run this program, clone repository, fork, or download zip files from Github. Use link ()
+1. To run this program, clone repository, fork, or download zip files from Github. Use link (https://github.com/oswen138/galactic-calc.git)
 2. Use code compiler of your choice to view files.
 3. Access main website via index.html.
 4. Html file viewable on your browser of choice.
