@@ -1,21 +1,19 @@
 
 export default class PlanetAge {
 
-  constructor(birthdate, lifeExpectancy)  {
+  constructor(birthdate, lifeExpectancy, gender, food, earthAge)  {
     this.birthdate = birthdate;
     this.lifeExpectancy = lifeExpectancy;
     this.gender = gender; 
     this.food = food;
+    this.earthAge = earthAge;
   }
-  
-   earthAge() {
-    let birthdate = this.birthdate;
-    let date = new(date);
-    let presentYear = newDate().getFullYear();
-    let earthAge = presentYear - this.birthdate;
-    return earthAge;
 
+  earthAge(){
+    let earthAge = this.birthdate;
+    return earthAge;
   }
+
 //Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
 
   ageMercury() {
