@@ -12,13 +12,11 @@ A website created with HTML, Javascript, and CSS where a user can submit informa
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Program returns their age in Mercury years** | 20 Earth Years| 83 Mercury Years |
-| **Program returns their age in Venus years** | 20 Earth Years | 32 Venus Years |
-| **Program returns their age in Mars years**| 20 Earth Years | 11 Mars Years |
-| **Program returns their age in Jupiter years**| 20 Earth Years | 2 Jupiter Years |
-| **Program determines years left to live on planet** | 100 Earth Years Life Expectancy | 17 days left to live on Mercury |
-| **User inputs years lived on planet and program returns years left to live on planet based on life expectancy** | 100 Earth Years Life Expectancy, 1 year on Mercury | 4 years left on Mercury |
-| **Program returns the number years lived past the life expectancy**| 200 Earth Years Old | 5 years past life expectancy on Mars |
+| **Program returns their age in Mercury years** | 15 Earth Years| 62.5 Mercury Years |
+| **Program returns their age in Venus years** | 15 Earth Years | 24.2 Venus Years |
+| **Program returns their age in Mars years**| 15 Earth Years | 8.0 Mars Years |
+| **Program returns their age in Jupiter years**| 15 Earth Years | 1.3 Jupiter Years |
+| **Program determines years left to live on planet** | 100 Earth Years Life Expectancy | 354.2 years left to live on Mercury |
 
 ## Setup/Installation Requirements
 

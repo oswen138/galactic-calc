@@ -1,49 +1,45 @@
 
 export default class PlanetAge {
 
-  constructor(lifeExpectancy, earthAge)  {
-    this.lifeExpectancy = lifeExpectancy;
+  constructor(earthAge)  {
+    this.lifeExpectancy = 100;
     this.earthAge = earthAge;
-    this.mercAge = Math.floor(this.earthAge /.24);
-    this.venusAge = Math.floor(this.earthAge /.62);
-    this.marsAge = Math.floor(this.earthAge /1.88);
-    this.jupAge = Math.floor(this.earthAge /11.86);
-    this.mercLeft;
-    this.venusLeft;
-    this.marsLeft;
-    this.jupLeft;
   }
-
+//notes from code review > refactor, use .toFixed(), leave conversion in methods, update a property, update tests
 //Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
-
   ageMercury() {
-    let mercAge = Math.floor(this.earthAge /.24);
-    return mercAge;
+    return (this.earthAge / 0.24).toFixed(1);    
   }
   // Returns their age in Venus years. (A Venus year is .62 Earth years.)
   ageVenus() {
-    let venAge = Math.floor(this.earthAge /.62);
-    return venAge;
+    return (this.earthAge / 0.62).toFixed(1);
   }
   // Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
   ageMars() {
-    let marsAge = Math.floor(this.earthAge /1.88);
-    return marsAge;
+    return (this.earthAge / 1.88).toFixed(1);
   }
   // Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
   ageJupiter() {
-    let jupAge = Math.floor(this.earthAge /11.86);
-    return jupAge;
+    return (this.earthAge / 11.86).toFixed(1);
   }
 
   // Determines how many years a user has left to live on each planet
 
-  planetLeft() {
-    this.mercLeft = this.lifeExpectancy - this.mercAge;
-    this.venusLeft = this.lifeExpectancy - this.venusAge;
-    this.marsLeft = this.lifeExpectancy - this.marsAge;
-    this.jupLeft = this.lifeExpectancy - this.jupAge;
-
-
+  mercLifeLeft(){
+    return ((this.lifeExpectancy - this.earthAge) / .24).toFixed(1);
+  }
+  venLifeLeft(){
+    return ((this.lifeExpectancy - this.earthAge) / .62).toFixed(1);
+  }
+  marsLifeLeft(){
+    return ((this.lifeExpectancy - this.earthAge) / 1.88).toFixed(1);
+  }
+  jupLifeLeft(){
+    return ((this.lifeExpectancy - this.earthAge) / 11.86).toFixed(1);
   }
 }
+  
+
+
+
+
