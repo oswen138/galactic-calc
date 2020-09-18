@@ -1,6 +1,6 @@
 # Super Galactic Age Calculator
 
-#### A program that allows users to determine their age based on a planet's solar years. 09/4/2020
+#### A program that allows users to determine their age based on a planet's solar years. 09/17/2020
 
 #### By **Ophelia Swen**
 
@@ -19,8 +19,6 @@ A website created with HTML, Javascript, and CSS where a user can submit informa
 | **Program determines years left to live on planet** | 100 Earth Years Life Expectancy | 17 days left to live on Mercury |
 | **User inputs years lived on planet and program returns years left to live on planet based on life expectancy** | 100 Earth Years Life Expectancy, 1 year on Mercury | 4 years left on Mercury |
 | **Program returns the number years lived past the life expectancy**| 200 Earth Years Old | 5 years past life expectancy on Mars |
-| **User eats chocolate so they get younger by 5 years**| 20, chocolate | 15 |
-| **User drinks juice, older by 2 years**| 20, juice | 22 |
 
 ## Setup/Installation Requirements
 
@@ -28,7 +26,9 @@ A website created with HTML, Javascript, and CSS where a user can submit informa
 2. Use code compiler of your choice to view files.
 3. Access main website via index.html.
 4. Html file viewable on your browser of choice.
-5. Use files as is or customize with your own code input
+5. Use files as is or customize with your own code input.
+6. Run npm install to install dependencies to your environment.
+7. Check passing of tests with the tool Jest by using npm run test command.
 
 ## Known Bugs
 * No known bugs at this time.
